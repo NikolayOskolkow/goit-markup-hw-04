@@ -248,7 +248,7 @@ h1 {
   border-radius: 4px;
 }
 
-.information-list-item:not(last-child) {
+.information-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
