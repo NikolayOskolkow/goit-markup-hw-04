@@ -84,6 +84,7 @@ li {
 }
 .nav {
   display: flex;
+  align-items: center;
 }
 
 .logo span {
@@ -98,8 +99,6 @@ li {
 }
 
 .logo {
-  display: flex;
-  align-items: center;
   margin-right: 93px;
   text-decoration: var(--decoration-none);
   font-family: "Raleway", "sans-serif";
@@ -110,8 +109,18 @@ li {
   color: #2196f3;
 }
 
-.nav-list {
+.header-link {
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+.nav-contacts {
+  display: flex;
   align-items: center;
+}
+
+.nav-list {
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -123,11 +132,6 @@ li {
   margin-right: 50px;
 }
 
-.nav-item {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .header-contacts:hover,
 .nav-contacts:focus {
   color: var(--link-accent-color);
@@ -135,6 +139,7 @@ li {
 
 .header-contacts {
   display: flex;
+  text-align: center;
   margin-left: auto;
   text-decoration: var(--decoration-none);
   font-weight: 500;
@@ -144,23 +149,20 @@ li {
   color: #757575;
 }
 
-.nav-contacts {
-  display: flex;
-  text-align: center;
-}
-
 .contacts-items:not(:last-child) {
-  margin-right: 50px;
-}
-
-.contacts-items {
-  align-items: center;
+  margin-right: 30px;
 }
 
 .header-icons {
+  fill: currentColor;
   display: flex;
   align-items: center;
   margin-right: 10px;
+}
+
+.header-icons:hover,
+.header-icons:focus {
+  color: var(--link-accent-color);
 }
 
 /* ------------HERO---------------------  */
@@ -298,7 +300,7 @@ h1 {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
@@ -369,6 +371,50 @@ h1 {
 .team-social-link:hover .team-social-icon,
 .team-social-link:focus .team-social-icon {
   fill: #ffffff;
+}
+
+/* ---------------------customers--------------------- */
+
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.customers-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customers-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customers-link {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  background-color: #ffffff;
+  padding: 16px 32px;
+  display: block;
+  fill: #afb1b8;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  fill: var(--link-accent-color);
+  border: 1px solid var(--link-accent-color);
 }
 
 /* ------------------portfolio--------------------- */
