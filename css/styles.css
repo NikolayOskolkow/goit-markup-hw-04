@@ -88,7 +88,7 @@ li {
 
 .logo span {
   text-decoration: var(--decoration-none);
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway";
   font-weight: 700px;
   font-size: 26px;
   line-height: 1.19;
@@ -98,19 +98,16 @@ li {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   margin-right: 93px;
   text-decoration: var(--decoration-none);
-  font-family: Raleway;
+  font-family: "Raleway", "sans-serif";
   font-weight: 700px;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
-}
-
-.header-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .nav-list {
@@ -126,14 +123,18 @@ li {
   margin-right: 50px;
 }
 
+.nav-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .header-contacts:hover,
 .nav-contacts:focus {
   color: var(--link-accent-color);
 }
 
 .header-contacts {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: flex;
   margin-left: auto;
   text-decoration: var(--decoration-none);
   font-weight: 500;
@@ -145,10 +146,21 @@ li {
 
 .nav-contacts {
   display: flex;
+  text-align: center;
 }
 
-.nav-contacts > .contacts-items:not(:last-child) {
+.contacts-items:not(:last-child) {
   margin-right: 50px;
+}
+
+.contacts-items {
+  align-items: center;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
 }
 
 /* ------------HERO---------------------  */
