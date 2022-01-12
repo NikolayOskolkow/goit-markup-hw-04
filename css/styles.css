@@ -517,7 +517,7 @@ h1 {
 .footer-logo {
   display: block;
   margin-bottom: 20px;
-  font-family: Raleway;
+  font-family: "Raleway", "sans-serif";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -554,4 +554,49 @@ h1 {
 
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.footer-social-item {
+  margin-right: 10px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #44454e;
+  justify-content: center;
+}
+
+.footer-svg {
+  fill: #ffffff;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--link-accent-color);
+}
+
+.footer-social-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-adres {
+  margin-right: 70px;
+}
+
+.footer > .container {
+  display: flex;
 }
